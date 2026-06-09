@@ -1,0 +1,14 @@
+version = 1
+
+[[annotations]]
+path = [
+  ".gitignore",
+  ".github/workflows/*",
+  "package.json",
+  "pnpm-lock.yaml",
+  "pnpm-workspace.yaml",
+  "vite.config.ts",
+  "tsconfig.json",
+]
+SPDX-FileCopyrightText = "NONE"
+SPDX-License-Identifier = "CC0-1.0"

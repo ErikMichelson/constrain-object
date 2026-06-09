@@ -1,0 +1,47 @@
+{
+  "name": "constrain-object",
+  "version": "1.0.0",
+  "description": "Constrains an object to enforce certain limits",
+  "homepage": "https://github.com/ErikMichelson/constrain-object#readme",
+  "bugs": {
+    "url": "https://github.com/ErikMichelson/constrain-object/issues"
+  },
+  "license": "MIT",
+  "author": "Erik Michelson <github@erik.michelson.eu>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ErikMichelson/constrain-object.git"
+  },
+  "files": [
+    "dist"
+  ],
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.cts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    },
+    "./package.json": "./package.json"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "vp pack",
+    "dev": "vp pack --watch",
+    "test": "vp test",
+    "test:cov": "vp test --coverage",
+    "check": "vp check",
+    "fix": "vp check --fix",
+    "prepublishOnly": "vp run build"
+  },
+  "devDependencies": {
+    "@typescript/native-preview": "7.0.0-dev.20260509.2",
+    "@vitest/coverage-v8": "^4.1.8",
+    "vite-plus": "catalog:"
+  },
+  "packageManager": "pnpm@11.5.2"
+}
