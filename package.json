@@ -1,6 +1,6 @@
 {
   "name": "constrain-object",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Constrains an object to enforce certain limits",
   "homepage": "https://github.com/ErikMichelson/constrain-object#readme",
   "bugs": {

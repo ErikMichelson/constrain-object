@@ -1,3 +1,8 @@
+<!--
+SPDX-FileCopyrightText: 2026 Erik Michelson
+SPDX-License-Identifier: MIT
+-->
+
 # Changelog
 
 ## 1.1.0 - 2026-06-10
