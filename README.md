@@ -15,6 +15,17 @@ Zero dependencies.
 npm install constrain-object
 ```
 
+## Browser
+
+Use via CDN with a `<script>` tag. The library is exposed as the global `ConstrainObject`.
+
+```html
+<script src="https://cdn.jsdelivr.net/npm/constrain-object/dist/index.iife.js"></script>
+<script>
+  const { constrainObject } = ConstrainObject;
+</script>
+```
+
 ## Usage
 
 ```ts

@@ -6,14 +6,22 @@ export default defineConfig({
       provider: "v8",
     },
   },
-  pack: {
-    dts: {
-      tsgo: true,
+  pack: [
+    {
+      dts: {
+        tsgo: true,
+      },
+      exports: true,
+      clean: true,
+      format: ["esm", "cjs"],
     },
-    exports: true,
-    clean: true,
-    format: ["esm", "cjs"],
-  },
+    {
+      format: ["iife"],
+      platform: "browser",
+      globalName: "ConstrainObject",
+      minify: true,
+    },
+  ],
   lint: {
     options: {
       typeAware: true,
