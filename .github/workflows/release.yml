@@ -19,8 +19,6 @@ jobs:
           node-version: lts/*
           cache: true
           registry-url: https://registry.npmjs.org
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
       - run: vp check
       - run: vp test --coverage
       - run: vp pack
